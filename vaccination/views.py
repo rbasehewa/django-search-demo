@@ -6,7 +6,7 @@ from django.shortcuts import render
 # request handler / view function
 # action: render a template
 def covid19_description(request):
-    return HttpResponse("Covid-19 Using Django Views and URLConfs Demo")
+    return render(request, 'staffs.html', {'name': 'Ryan Mark'})
     # pull data from database
     # Transform
     # send email
